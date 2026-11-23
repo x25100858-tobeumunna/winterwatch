@@ -129,7 +129,7 @@ const KM_PER_HOUR = 20;      // plan.md §4
 // Your Cloudflare Worker address (not secret: the key lives on the Worker).
 // Used automatically when no personal key is saved in this browser, so visitors need no key.
 const RELAY_URL = "";   // e.g. "https://winterwatch-relay.YOUR-NAME.workers.dev"
-const DEFAULT_MODEL = { openai: "gpt-4o-mini", anthropic: "claude-haiku-4-5", google: "gemini-2.5-flash", groq: "llama-3.3-70b-versatile" };
+const DEFAULT_MODEL = { openai: "gpt-4o-mini", anthropic: "claude-haiku-4-5", google: "gemini-2.5-flash", groq: "openai/gpt-oss-120b" };
 
 /* ---------------- helpers ---------------- */
 const $ = id => document.getElementById(id);

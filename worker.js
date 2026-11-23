@@ -4,11 +4,11 @@
 // Worker settings → Variables and Secrets:
 //   API_KEY        (Secret)  your provider key
 //   PROVIDER       (Text)    openai | anthropic | google | groq
-//   MODEL          (Text)    e.g. gpt-4o-mini, claude-haiku-4-5, gemini-2.5-flash, llama-3.3-70b-versatile
+//   MODEL          (Text)    e.g. gpt-4o-mini, claude-haiku-4-5, gemini-2.5-flash, openai/gpt-oss-120b
 //   ALLOWED_ORIGIN (Text)    https://YOUR-USERNAME.github.io
 
 const MAX_INPUT_CHARS = 80000;  // stops anyone sending huge requests through your key
-const MAX_OUTPUT_TOKENS = 1500;
+const MAX_OUTPUT_TOKENS = 4000;  // reasoning models (e.g. gpt-oss) use part of this for thinking
 
 export default {
   async fetch(request, env) {
